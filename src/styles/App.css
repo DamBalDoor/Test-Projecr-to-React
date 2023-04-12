@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: #dbeefd;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.App {
+    width: 800px;
+}
+
+.post {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 10px 5px 5px rgb(171, 171, 171);;
+    display: flex;
+    padding: 15px;
+    border: 2px solid teal;
+    border-radius: 15px;
+    margin: 15px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.post__btns {
+    display: flex;
+}
+
+.remove-btn {
+        margin-right: 0.5rem;
+}
+
+.post-enter {
+    transform: translateX(-350px);
+}
+.post-enter-active {
+    transform: translateX(0px);
+    transition: all 500ms ease-in;
+}
+.post-exit {
+    opacity: 1;
+}
+.post-exit-active {
+    transform: translateX(-350px);
+    transition: all 500ms ease-in;
+}
+  
+.page__wrapper {
+    margin-top: 30px;
+    margin-bottom: 5px;
+}
+
+.page {
+    padding: 10px;
+    border: 1px solid teal;
+    cursor: pointer;
+}
+
+.page__current {
+    border: 2px solid orange;
+    font-weight: bold;
+}
+
+.navbar {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    background:  #c1e2fb; 
+    border: 2px solid;
+    
+}
+
+.navbar__links {
+    margin-left: auto;
+}
+
+.navbar__link {
+    padding: 5px;
+}
